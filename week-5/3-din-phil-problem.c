@@ -55,6 +55,9 @@ void *philosopher(void *num)
 
 int main()
 {
+    printf("Dining Philosophers Problem\n");
+    printf("Royden Miranda 1WA24CS240\n\n");
+
     int i;
     int ids[N]; // Initialize forks (mutexes)
 

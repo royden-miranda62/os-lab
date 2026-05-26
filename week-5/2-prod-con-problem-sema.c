@@ -53,6 +53,9 @@ void *consumer(void *arg)
 
 int main()
 {
+    printf("Producer-Consumer Problem with Semaphores\n");
+    printf("Royden Miranda 1WA24CS240\n\n");
+    
     pthread_t prod, cons;
 
     sem_init(&empty, 0, BUFFER_SIZE);

@@ -43,6 +43,9 @@ void consumer()
 
 int main()
 {
+    printf("Producer-Consumer Problem\n");
+    printf("Royden Miranda 1WA24CS240\n");
+
     int choice;
 
     while (1)
@@ -53,20 +56,20 @@ int main()
 
         switch (choice)
         {
-            case 1:
-                producer();
-                break;
-            case 2:
-                consumer();
-                break;
-            case 3:
-                printf("Exiting.");
-                exit(0);
-                break;
+        case 1:
+            producer();
+            break;
+        case 2:
+            consumer();
+            break;
+        case 3:
+            printf("Exiting.");
+            exit(0);
+            break;
 
-            default:
-                printf("Error: Invalid choice.");
-                break;
+        default:
+            printf("Error: Invalid choice.");
+            break;
         }
     }
 
