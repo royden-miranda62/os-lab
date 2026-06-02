@@ -84,7 +84,7 @@ void listFiles()
 
 int main()
 {
-    printf("Two Level Directory\n");
+    printf("Two-Level Directory\n");
     printf("Royden Miranda 1WA24CS240\n\n");
 
     int choice;
@@ -92,8 +92,9 @@ int main()
 
     do
     {
-        printf("\n1.Add User  2.Create File  3.List  0.Exit\nChoice: ");
+        printf("\n1. Add User  2. Create File  3. List  0. Exit\nChoice: ");
         scanf("%d", &choice);
+
         switch (choice)
         {
         case 1:

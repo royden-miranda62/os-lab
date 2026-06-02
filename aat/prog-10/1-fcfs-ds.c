@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <stdlib.h> 
+#include <stdlib.h>
 
 int main()
 {
@@ -30,5 +30,6 @@ int main()
     }
 
     printf("\nTotal Head Movement: %d cylinders\n", totalMovement);
+    
     return 0;
 }

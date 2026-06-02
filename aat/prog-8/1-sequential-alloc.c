@@ -62,5 +62,6 @@ int main()
         printf("\nAllocation Failed: Blocks not contiguous or already in use.\n");
 
     displayDisk();
+    
     return 0;
 }

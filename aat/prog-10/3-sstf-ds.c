@@ -1,13 +1,11 @@
-// Disk Scheduling - SSTF (Shortest Seek Time First)
-
-#include <limits.h> // for INT_MAX
+#include <limits.h>
 #include <stdio.h>
-#include <stdlib.h> // for abs()
+#include <stdlib.h>
 
 int main()
 {
-
-    printf("Name: ROHAN PODDAR\nUSN:1WA24CS238\n\n");
+    printf("SSTF Disk Scheduling\n");
+    printf("Royden Miranda 1WA24CS240\n\n");
 
     int n, head, i, count;
     int total_movement = 0;
@@ -52,5 +50,6 @@ int main()
     }
 
     printf("\nTotal Head Movement: %d cylinders\n", total_movement);
+
     return 0;
 }

@@ -1,15 +1,15 @@
-// Disk Scheduling - C-LOOK (Circular LOOK)
-
 #include <stdio.h>
 #include <stdlib.h> // for abs(), qsort()
 
-// Comparator for ascending sort
-int compare(const void *a, const void *b) { return (*(int *)a - *(int *)b); }
+int compare(const void *a, const void *b)
+{
+    return (*(int *)a - *(int *)b);
+}
 
 int main()
 {
-
-    printf("Name: ROHAN PODDAR\nUSN:1WA24CS238\n\n");
+    printf("CLOOK Disk Scheduling\n");
+    printf("Royden Miranda 1WA24CS240\n\n");
 
     int n, head, i;
     int total_movement = 0;
@@ -62,5 +62,6 @@ int main()
     }
 
     printf("\nTotal Head Movement: %d cylinders\n", total_movement);
+    
     return 0;
 }

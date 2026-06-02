@@ -41,30 +41,30 @@ void deleteFile(char *name)
 void listFiles()
 {
     printf("\n--- Single-Level Directory ---\n");
-    
+
     if (fileCount == 0)
     {
         printf("Directory is empty.\n");
         return;
     }
-    
+
     for (int i = 0; i < fileCount; i++)
         printf("  [%d] %s\n", i + 1, directory[i]);
 }
 
 int main()
 {
-    printf("Single Level Directory\n");
+    printf("Single-Level Directory\n");
     printf("Royden Miranda 1WA24CS240\n\n");
 
     int choice;
     char name[NAME_LEN];
-    
+
     do
     {
-        printf("\n1.Create  2.Delete  3.List  0.Exit\nChoice: ");
+        printf("\n1. Create  2. Delete  3. List  0. Exit\nChoice: ");
         scanf("%d", &choice);
-        
+
         switch (choice)
         {
         case 1:
@@ -72,18 +72,18 @@ int main()
             scanf("%s", name);
             createFile(name);
             break;
-        
+
         case 2:
             printf("File name: ");
             scanf("%s", name);
             deleteFile(name);
             break;
-        
+
         case 3:
             listFiles();
             break;
         }
     } while (choice != 0);
-    
+
     return 0;
 }
